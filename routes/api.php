@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('projects', [CategoryController::class, 'index']);
+Route::get('projects/{slug}', [CategoryController::class, 'show']);

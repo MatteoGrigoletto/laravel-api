@@ -14,4 +14,9 @@ class CategoryController extends Controller
     return $projects;
     
     }
+    public function show($slug){
+    $project = Project::where('slug', $slug)->first();
+    return $project;
+    }
 }
+
